@@ -35,6 +35,10 @@ pkgs_to_install <- pkgs[which(!sub("^.+/", "", pkgs) %in% ip)]
 BiocManager::install(pkgs_to_install, update = TRUE, ask = FALSE, upgrade = 'always')
 
 
+## ----install, eval = TRUE------------------------------------------------
+for (i in 1:length(pkgs)) {
+    library(pkgs[i],character.only = TRUE) 
+}
+
 ## ----success, eval = TRUE------------------------------------------------
 message("* Successful!")
-
