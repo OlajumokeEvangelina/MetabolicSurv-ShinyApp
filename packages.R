@@ -1,7 +1,7 @@
 ## ----rversion, eval = TRUE-----------------------------------------------
 message("* Checking R version.")
-stopifnot(base::version$major == "3")
-stopifnot(base::version$minor >= "6.1")
+stopifnot(base::version$major >= "4")
+#stopifnot(base::version$minor >= "6.1")
 
 
 ## ----biocmanagermsg, eval = TRUE-----------------------------------------
